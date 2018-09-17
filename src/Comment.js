@@ -30,7 +30,7 @@ class Comment extends Component {
       timeString:
         duration > 60
           ? `${Math.round(duration / 60)}分钟前`
-          : `${Math.round(Math.max(duration, 1))} 秒前`
+          : `${Math.round(Math.max(duration, 1))} 秒前` // 至少大于1秒
     });
   }
   // 删除评论方法
